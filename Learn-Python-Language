@@ -1,1 +1,125 @@
+Python as our Programming Language of choice for this module. Python has quickly become the industry standard when it comes to Machine Learning, Data Mining, and Data Science as a whole. It has a relatively simple and straightforward syntax and is what we would call a high-level programming language. The version we will be utilising is Python 3.10. We will be making use of Python, alongside popular libraries, as a tool for reading, exploring, and manipulating data as well as modelling these data with various Machine Learning techniques. This is a freely available software tool which works on multiple platforms (Windows, Linux, Mac). This software package enables us to work with our data and make critical decisions for our approach.
 
+Popular numerical python library: numpy. Numpy is a foundational vector mathematics library, so for vectors and matrices. install our first library, numpy, for large multi-dimensional arrays and vectors. Numpy for Vectors related to the MCP Neuron and the Perceptron model. 
+
+Installing Python AND installing an editor: In order to write our Python programs, we will be using an Editor. and this editor will help us write our code, package manager, and a helpful utility called Jupyter Notebooks.
+Visual Studio Code (VSCode) is a modern and configurable editor from Microsoft which is available for Windows, Mac, and Linux. 
+
+The Python package manager: is called pip. For any external libraries (that's code modules written by other people to make our lives easier), we can install/remove/update them using pip. 
+
+
+To test if this was successful open up a Command Prompt and type python --version
+
+Create a workspace by clicking File->New folder-> and make a new folder. Here I created ‘PYTHON-Workspace’. Then press (ctrl+shift+p), start typing the Python: Create Environment command to search, and then select the command.
+
+The command presents a list of environment types, Venv or Conda. For this example, select Venv. The command then presents a list of interpreters that can be used for your project. Select the interpreter you installed at the beginning of the tutorial.After selecting the interpreter, a notification will show the progress of the environment creation and the environment folder (/.venv) will appear in your workspace
+
+
+Create a Python source code file: From the File Explorer toolbar, select the New File button on the hello folder: Name the file hello.py, and VS Code will automatically open it in the editor: By using the .py file extension, you tell VS Code to interpret this file as a Python program, so that it evaluates the contents with the Python extension and the selected interpreter.
+
+
+Now that you have a code file in your Workspace, enter the following source code in hello.py:
+  msg = "Roll a dice!"
+  print(msg)
+
+
+
+Configure and run the debugger: Debugging support is provided by the Python Debugger extension, which is automatically installed with the Python extension. To ensure it has been installed correctly, open the Extensions view (Ctrl+Shift+X) and search for @installed python debugger. You should see the Python Debugger extension listed in the results. Next, set a breakpoint on line 2 of hello.py by placing the cursor on the print call and pressing F9.
+
+
+Install and use packages: In Python, packages are how you obtain any number of useful code libraries, typically from PyPI, that provide additional functionality to your program. For this example, you use the numpy package to generate a rando
+Return to the Explorer view (the top-most icon on the left side, which shows files), open hello.py, and paste in the following source code:
+  import numpy as np
+  msg = "Roll a dice!"
+  print(msg)
+  print(np.random.randint(1,9))
+
+
+
+Next, run the file in the debugger using the "Python: Current file" configuration as described in the last section.
+You should see the message, "ModuleNotFoundError: No module named 'numpy'". This message indicates that the required package isn't available in your interpreter.
+
+
+To install the numpy package, stop the debugger and use the Command Palette to run Terminal: Create New Terminal (Ctrl+Shift+p). This command opens a command prompt for your selected interpreter.
+To install the required packages in your virtual environment, enter the following commands as appropriate for your operating system:
+  # Windows (may require elevation)
+  python -m pip install numpy
+
+VARIABLE: variable=value
+          Color = ‘blue’
+          Fav_Color = ‘blue’
+          Age=13
+          print(Fav_Color)
+          print(Fav_Color*20)
+          print(age)
+          Update variable: 
+          Fav_Color = ‘pink’
+          print(Fav_Color)
+  Create a variable:
+          name = input(‘what is your name?’)
+          Print(name)
+  To recite the answers, we use formatting. This is a quick way to insert your variable values into a sentence.  
+          f ‘this is a sentence {variable}’
+
+
+
+NUMBERS: Numeric types: 
+          Int= is a whole number, 
+          Float= is any number that contains decimal point.
+  The type() function tells you whether its int or float
+          Type(37)
+          Type(4.2)
+          Int(float)
+          Float(int)
+
+Order of operations: PEMDAS
+
+
+LISTS: group related items together in a list. A list is a collection of items that are ordered and can be changed. This means that each item in the list has a specific position & if you like to change the items in the list, you can do so. You can have duplicate items in a list also.
+        CREATE A LIST:  my_list= [‘list item1’, ‘list item2’]
+        LIST LENGTH: to determine how many items in the list, use len(), len(my_list)
+        CHECK WHETHER AN ITEM EXISTS IN A LIST: ‘list item1’ in my_list
+        GET INDEX OF AN ITEM: my_list.index)’list item’)
+        ACCESS ITEMS IN A LIST: my_list[index], hobbies[1]
+        CHANGE LIST ITEM VALUE: my_list[index]=‘new value’, hobbies[0]= ‘snow’
+        ADD ITEM TO A LIST: my_list.append(‘list item3’)
+        INSERT ITEM TO A LIST: you can insert an item into a list at a specified index using insert(). My_list.insert(1,’list item3’)
+        REMOVE ITEM FROM A LIST: using remove(). My_list.remove(‘list item1’)
+        REMOVE ITEM AT A SPECIFIED INDEX: using pop(). My_list.pop(), hobbies.pop(1)
+        Empty a list: using clear(). My_list.clear()
+        CONCATENATE: when you combine or concatenate lists, a new list is create.
+        My_list=[‘list item1’, ‘list item2’]
+        My_other_list = [‘list itema’]
+        My_new_list= My_list+ My_other_list 
+        EXTEND: you don’t need to create a new list every time you want to join 2 lists together. By using extend()
+        My_list=[‘list item1’, ‘list item2’]
+        My_other_list = [‘list item a’]
+        My_list.extend( My_other_list )
+
+FUNCTIONS: if same block of code repeatedly n the program then create a function that you can use anywhere you need. 
+      CREATE A FUNCTION: 
+            def function_name():
+            Action 1
+            Action 2
+      CALL A FUNCTION: 
+            hello_world()
+      RETURN: 
+            You can end the run of a function by including a return statement in the function body.
+              def function_name():
+              Action 1
+              Return
+      PARAMETERS: sometimes you need to provide data with your function to complete the action inside the function body. The data that you pass into a function is known as a parameter.
+              def function_name(parameter1, parameter2):
+              Action 1
+      DEFAULT ARGUMENTS: a function can also have default arguments, which makes the parameter optional. The function uses the default value unless one is provided when calling the function.
+              def function_name(parameter=value):
+              Action 1
+      ARBITRARY ARGUMENTS: You can also create a function without knowing how many arguments will be passed into the function. An arbitraty argument is indicated by a * before the parameter name in a function.
+              def function_name(*args):
+              Action 1
+              Action 2
+      KEYWORD ARGUMENTS: 
+                  you also have the option to pass arguments into a function call without maintaining the default order. If you don’t want to depend on ordering, then you can name the arguments. You can name arguments by creating keyword arguments in the function call. Keyword arguments are often referred as *kwargs:
+            Function_name(keyword1=value1, keyword2=value2)
+            
+BUILT-IN FUNCTIONS: Python has dozens of built in functions like print(), bool(), float(), int(), input(), len(), range(), slice(), str(), type()
