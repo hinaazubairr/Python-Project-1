@@ -13,6 +13,9 @@ This tutorial includes different python projects on:
 10. Program #8 : Functions
 11. Program#9: Write a program that creates a Customer service BOT. <i><u> CustomerServiceBot.py </i></u>
 12. Program#10: NumpyInstallation
+13. Program#11: Arrays.py
+14. Program#12: dotfunction.ipynb
+15. 
 
 
 
