@@ -9,6 +9,7 @@ This tutorial includes different python projects on:
 6. Program#4: Write a python program in which you ask 4 questions from your classmates.: # Name of this program is:   <i><u>introduce_app.py</i></u>
 7. Program#5: Numbers in Python, discussing DataTypes and Arithmetic operations
 8. Program # 6: shoppingfair.py: # Project: shopping for science fair supplies
+9. Program7-Lists.py
 7. Program#9: Write a program that creates a Customer service BOT. <i><u> CustomerServiceBot.py </i></u>
 
 
