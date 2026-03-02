@@ -10,6 +10,7 @@ This tutorial includes different python projects on:
 7. Program#5: Numbers in Python, discussing DataTypes and Arithmetic operations
 8. Program # 6: shoppingfair.py: # Project: shopping for science fair supplies
 9. Program7-Lists.py
+10. Program #8 : Functions
 7. Program#9: Write a program that creates a Customer service BOT. <i><u> CustomerServiceBot.py </i></u>
 
 
